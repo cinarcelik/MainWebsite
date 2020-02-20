@@ -1,0 +1,224 @@
+
+/* --- FONT IMPORT FROM GOOGLE --- */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,400,600,700&display=swap');
+
+
+/* --- BODY & HTML --- */
+html, body {
+    font-family: 'Titillium Web', sans-serif;
+    padding-top: 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* --- NAVIGATION BAR --- */
+.navbar {
+    background-color: orange;
+    padding: .2rem 1.5rem;
+    position: fixed;
+    width: 100%;
+}
+.navbar-nav li {
+    padding-right: 14px;
+}
+.nav-link {
+    font-size: 1.2em !important;
+    color: white;
+}
+.nav-link:hover {
+    color: black;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler {
+    border-color: white;
+  } 
+
+/* --- WELCOME --- */
+.welcome {
+    background-image: url("img/Artboard1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+.welcome h1 {
+    font-size: 400%;
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+.welcome hr.first {
+    border-top: 1px solid;
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.welcome hr.second {
+    border-top: 1px solid;
+    width: 50%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.welcome .lead {
+    font-size: 150%;
+    font-weight: 400;
+}
+
+
+/*--- FIXED BG IMG --*/
+figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0!important;
+  }
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+#fixed {
+    background-image: url('img_bootstrap/mac.png');
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+}
+
+
+/* --- WHAT I DO --- */
+.what-i-do {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.what-i-do h2 {
+    font-size: 300%;
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+.what-i-do hr {
+    border-top: 1px solid gray;
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.portfolio-button .btn {
+    color: orange;
+    font-weight: 900;
+    background-color: white;
+    border: 2px solid orange;
+    margin-top: 1rem;
+}
+.portfolio-button .btn:hover {
+    background-color: orange;
+    color: white;
+}
+
+
+/* --- MY TOOLKIT --- */
+.toolkit {
+    background-color: whitesmoke;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.toolkit h2 {
+    font-size: 300%;
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+.toolkit hr {
+    border-top: 1px solid black;
+    width: 75%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.toolkit-button .btn {
+    color: orange;
+    font-weight: 900;
+    background-color: white;
+    border: 2px solid orange;
+}
+.toolkit-button .btn:hover {
+    background-color: orange;
+    color: white;
+}
+
+
+/* --- CONTACT FORM --- */
+.contact {
+    background: white;
+}
+.contact h3 {
+    font-size: 300%;
+    font-weight: 200;
+}
+.contact hr {
+    border-top: 1px solid black;
+    width: 75%;
+}
+
+
+/* --- SOCIAL MEDIA --- */
+.social {
+    background-color: rgb(180, 180, 180);
+    padding: 1rem;
+}
+
+
+/* --- FOOTER --- */
+.footer {
+    background-color: rgb(60, 60, 60);
+    color: white;
+    padding-top: .8rem;
+}
+.footer h5 {
+    font-weight: 200;
+    font-size: 120%;
+}
+
+
+/*--- MEDIA QUERIES --*/
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
