@@ -232,14 +232,17 @@ html, body {
 
 
 /* --- FOOTER --- */
-.footer {
+footer {
     background-color: rgb(60, 60, 60);
     color: white;
-    padding-top: .8rem;
+    padding-top: .5rem;
 }
-.footer h5 {
+footer h5 {
     font-weight: 200;
     font-size: 120%;
+}
+footer a {
+    padding: 0.1rem;
 }
 
 
