@@ -8,7 +8,7 @@
     <meta name="author" content="Çınar Çelik">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/en/portfolio_style.css">
+    <link rel="stylesheet" href="/style.css">
     
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
           rel="stylesheet" 
@@ -29,7 +29,7 @@
 
 <body>
 
-    <!--NAVIGATION BAR-->
+    <!-- ========== NAVIGATION BAR ========== -->
     <nav class="navbar navbar-expand-md fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="/index.html"><img src="/img/logo.png"></a>
@@ -46,36 +46,79 @@
         </div>
     </div>
     </nav>
+
+    <!-- ========== PORTFOLIO ========== -->
+    <div class="container">
+        <div class="row">
+            <div class="portfolio col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="portfolio-title">Portfolio</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div align="center">
+                <button class="btn btn-default filter-button" data-filter="all">All</button>
+                <button class="btn btn-default filter-button" data-filter="product">Product Design</button>
+                <button class="btn btn-default filter-button" data-filter="game">Game Design and Development</button>
+                <button class="btn btn-default filter-button" data-filter="ui">UI Design and Front-End Development</button>
+                <button class="btn btn-default filter-button" data-filter="project">Python and Arduino Projects</button>
+            </div>
+        </div>
+
+        <!-- newest to oldest -->
+        <div class="row justify-content-center">
+            <div class="portfolio_item col-lg-4 col-md-6 col-sm-6 col-xs-12 filter product">
+                <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+            </div>
+
+            <div class="portfolio_item col-lg-4 col-md-6 col-sm-6 col-xs-12 filter game">
+                <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+            </div>
+
+            <div class="portfolio_item col-lg-4 col-md-6 col-sm-6 col-xs-12 filter ui">
+                <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+            </div>
+
+            <div class="portfolio_item col-lg-4 col-md-6 col-sm-6 col-xs-12 filter ui">
+                <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+            </div>
+
+            <div class="portfolio_item col-lg-4 col-md-6 col-sm-6 col-xs-12 filter game">
+                <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+            </div>
+
+            <div class="portfolio_item col-lg-4 col-md-6 col-sm-6 col-xs-12 filter project">
+                <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+            </div>
+
+            <div class="portfolio_item col-lg-4 col-md-6 col-sm-6 col-xs-12 filter product">
+                <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+            </div>
+
+            <div class="portfolio_item col-lg-4 col-md-6 col-sm-6 col-xs-12 filter project">
+                <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+            </div>
+
+            <div class="portfolio_item col-lg-4 col-md-6 col-sm-6 col-xs-12 filter product">
+                <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+            </div>
+
+            <div class="portfolio_item col-lg-4 col-md-6 col-sm-6 col-xs-12 filter game">
+                <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+            </div>
+
+            <div class="portfolio_item col-lg-4 col-md-6 col-sm-6 col-xs-12 filter product">
+                <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+            </div>
+
+            <div class="portfolio_item col-lg-4 col-md-6 col-sm-6 col-xs-12 filter product">
+                <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+            </div>
+        </div>
+    </div>
     
 
-    <!--MAIN-->
-
-    <div class="controls">
-        <button type="button" class="control" data-filter="all">All</button>
-        <button type="button" class="control" data-filter=".product">Product Design</button>
-        <button type="button" class="control" data-filter=".logo">Logo Design</button>
-        <button type="button" class="control" data-filter=".ui">UI Design</button>
-        <button type="button" class="control" data-filter=".web">Web Design & Development</button>
-        <button type="button" class="control" data-filter=".game">Game Design & Development</button>
-        <button type="button" class="control" data-filter=".arduino">Arduino Projects</button>
-        <button type="button" class="control" data-filter=".python">Python Projects</button>
-    </div>
-
-    <div class="container">
-        <div class="mix product"></div>
-        <div class="mix logo"></div>
-        <div class="mix ui"></div>
-        <div class="mix web"></div>
-        <div class="mix game"></div>
-        <div class="mix arduino"></div>
-        <div class="mix python"></div>
-
-        <div class="gap"></div>
-        <div class="gap"></div>
-        <div class="gap"></div>
-    </div>
-
-    <!--SOCIAL MEDIA-->
+    <!-- ========== SOCIAL MEDIA ========== -->
     <div class="container-fluid social">
     <div class="row text-center">
         <div class="col-12">
@@ -86,7 +129,7 @@
     </div>
     </div>
 
-    <!--FOOTER-->
+    <!-- ========== FOOTER ========== -->
     <footer>
     <div class="container-fluid">
     <div class="row text-center">
@@ -102,13 +145,35 @@
     </div>
     </footer>
 
-    <script src="/mixitup.min.js"></script>
+    <!-- ========== JAVASCRIPT for PORTFOLIO ========== -->
+    <script type="text/javascript">
+                $(document).ready(function(){
 
-        <script>
-            var containerEl = document.querySelector('.container');
+        $(".filter-button").click(function(){
+            var value = $(this).attr('data-filter');
+            
+            if(value == "all")
+            {
+                //$('.filter').removeClass('hidden');
+                $('.filter').show('1000');
+            }
+            else
+            {
+        //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+        //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                $(".filter").not('.'+value).hide('3000');
+                $('.filter').filter('.'+value).show('3000');
+                
+            }
+        });
 
-            var mixer = mixitup(containerEl);
-        </script>
+        if ($(".filter-button").removeClass("active")) {
+        $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+
+        });
+    </script>
 
 </body>
 
