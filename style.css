@@ -1,20 +1,19 @@
 
-/* --- FONT IMPORT FROM GOOGLE --- */
+/* ---========== FONT IMPORT FROM GOOGLE ==========--- */
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,400,600,700&display=swap');
 
 
-/* --- BODY & HTML --- */
+/* ---========== BODY & HTML ==========--- */
 html, body {
     font-family: 'Titillium Web', sans-serif;
-    padding-top: 2rem;
     height: 100%;
     width: 100%;
 }
 
 
-/* --- NAVIGATION BAR --- */
+/* ---========== NAVIGATION BAR ==========--- */
 .navbar {
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.75);
     padding: .2rem 1.5rem;
     position: fixed;
     width: 100%;
@@ -36,16 +35,18 @@ html, body {
     border-color: white;
   } 
 
-/* --- WELCOME --- */
+/* ---========== WELCOME ==========--- */
 .welcome {
     background-image: url("img/Artboard1.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
     padding: 2rem;
 }
 .welcome h1 {
     font-size: 400%;
     font-weight: 400;
+    padding-top: 4rem;
     padding-bottom: 2rem;
 }
 .welcome hr.first {
@@ -66,7 +67,7 @@ html, body {
 }
 
 
-/*--- FIXED BG IMG --*/
+/* ---========== FIXED BACKGROUND IMAGE ==========--- */
 figure {
     position: relative;
     width: 100%;
@@ -97,7 +98,7 @@ figure {
 }
 
 
-/* --- WHAT I DO --- */
+/* ---========== WHAT I DO ==========--- */
 .what-i-do {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -126,16 +127,18 @@ figure {
 }
 
 
-/* --- ABOUT ME ---*/
+/* ---========== ABOUT ME ==========--- */
 .aboutme {
-    padding: 1.5rem;
+    padding-top: 6rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 .photo {
     max-width: 100%;
 }
 
 
-/* --- MY TOOLKIT --- */
+/* ---========== MY TOOLKIT ==========--- */
 .toolkit {
     background-color: whitesmoke;
     padding-top: 2rem;
@@ -164,8 +167,61 @@ figure {
 }
 
 
-/* --- CONTACT FORM --- */
+/* ---========== PORTFOLIO ==========--- */
+.portfolio-title
+{
+    padding-top: 6rem;
+    font-size: 28pt;
+    color: orange;
+    text-align: center;
+    font-weight: 500;
+}
+.portfolio-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+}
+.filter-button
+{
+    font-size: 20pt;
+    border: 1px solid orange;
+    border-radius: 5px;
+    text-align: center;
+    color: orange;
+    margin-bottom: 1rem;
+
+}
+.filter-button:hover
+{
+    font-size: 20pt;
+    border: 1px solid orange;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: white;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: orange;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.portfolio_item
+{
+    margin-bottom: 30px;
+}
+
+
+/* ---========== CONTACT ==========--- */
 .contact {
+    padding-top: 6rem;
     background: white;
 }
 .contact h3 {
@@ -178,7 +234,7 @@ figure {
 }
 
 
-/* --- SOCIAL MEDIA --- */
+/* ---========== SOCIAL MEDIA ==========--- */
 .social {
     background-color: rgb(180, 180, 180);
     padding: 1rem;
@@ -188,7 +244,7 @@ figure {
 }
 
 
-/* --- FOOTER --- */
+/* ---========== FOOTER ==========--- */
 footer {
     background-color: rgb(60, 60, 60);
     color: white;
@@ -203,7 +259,7 @@ footer a {
 }
 
 
-/*--- MEDIA QUERIES --*/
+/* ---========== MEDIA QUERIES ==========--- */
 @media (max-width: 992px) {
 
 }
@@ -215,7 +271,7 @@ footer a {
 }
 
 
-/*--- Bootstrap Padding Fix --*/
+/* ---========== Bootstrap Padding Fix ==========--- */
 [class*="col-"] {
     padding: 1rem;
 }
