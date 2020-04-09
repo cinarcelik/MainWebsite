@@ -1,13 +1,18 @@
 
 /* ---========== FONT IMPORT FROM GOOGLE ==========--- */
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
-
-/* ---========== BODY & HTML ==========--- */
-html, body {
-    font-family: 'Titillium Web', sans-serif;
+/* ---========== BODY ==========--- */
+body {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+   /* Base font size: 16px so,
+        1rem = 16px,
+        1,5rem = 24px, 
+        2rem = 32px etc. */
     height: 100%;
     width: 100%;
+    margin: 0px;
 }
 
 
