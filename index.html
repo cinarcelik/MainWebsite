@@ -313,8 +313,10 @@
         
             <!--Grid column-->
             <div class="col-md-12 mb-md-0 mb-5">
-                <form class="contact-form" name="contact-form" 
-                      action="contactform.php" method="post">
+                <form class="contact-form" 
+                      name="contact-form" 
+                      action="<?= $_SERVER['PHP_SELF']; ?>" 
+                      method="post">
     
                     <!--Grid row-->
                     <div class="row">
@@ -390,7 +392,7 @@
                     <button type="submit" 
                             id="submit" 
                             value="submit" 
-                            class="submit-button">Send
+                            class="btn btn-primary">Send
                     </button>
                 </div>
     
