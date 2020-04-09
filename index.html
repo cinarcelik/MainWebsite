@@ -38,6 +38,10 @@
     <script src="https://kit.fontawesome.com/a4b2c895af.js" 
             crossorigin="anonymous"></script>
 
+    <!-- for Contact Form -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="form.js"></script>
+
     <!-- Custom Style CSS -->
     <link href="/style.css" rel="stylesheet" >
 </head>
@@ -313,9 +317,11 @@
         
             <!--Grid column-->
             <div class="col-md-12 mb-md-0 mb-5">
-                <form class="contact-form" 
+                <form role="form"
+                      class="contact-form"
+                      id="reused_form" 
                       name="contact-form" 
-                      action="<?= $_SERVER['PHP_SELF']; ?>" 
+                      action="" 
                       method="post">
     
                     <!--Grid row-->
@@ -332,6 +338,7 @@
                                        class="form-control" 
                                        placeholder="Enter your full name"
                                        autocomplete="on"
+                                       maxlength="50"
                                        required>
                             </div>
                         </div>
@@ -347,6 +354,7 @@
                                        class="form-control" 
                                        placeholder="Enter your e-mail"
                                        autocomplete="on"
+                                       maxlength="50"
                                        required>
                             </div>
                         </div>
@@ -375,27 +383,39 @@
                             <div class="md-form">
                                 <label for="message"
                                        id="message-label">Message</label>
-                                <textarea type="text" 
+                                <textarea type="textarea" 
                                           id="message" 
                                           name="message" 
                                           rows="2" 
                                           class="form-control"
                                           placeholder="Please enter your message here"
+                                          maxlength="6000" 
+                                          rows="7"
                                           required>
                                 </textarea>
                             </div>
                         </div>
                     </div>
+
+                    <!--Grid row-->
+                    <div class="text-center text-md-right">
+                        <button type="submit" 
+                                id="btnContactUs" 
+                                value="submit" 
+                                class="btn btn-success">Send
+                        </button>
+                    </div>
                 </form>
-    
-                <div class="text-center text-md-right">
-                    <button type="submit" 
-                            id="submit" 
-                            value="submit" 
-                            class="btn btn-primary">Send
-                    </button>
+
+                <div id="success_message" 
+                     style="width:100%; height:100%; display:none; "> 
+                    <h3>Sent your message successfully!</h3> 
                 </div>
-    
+                <div id="error_message" 
+                     style="width:100%; height:100%; display:none; "> 
+                    <h3>Error</h3> Sorry there was an error sending your form. 
+                </div>
+                
             </div>
         </div>
     </div>
