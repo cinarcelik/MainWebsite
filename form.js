@@ -21,7 +21,7 @@ $(function()
             $('#error_message').show();
 
             //reverse the response on the button
-            $('button[type="submit"]', $form).each(function()
+            $('button[type="button"]', $form).each(function()
             {
                 $btn = $(this);
                 label = $btn.prop('orig_label');
@@ -60,4 +60,19 @@ $(function()
             });        
         
       });	
+});
+
+
+
+$(function()
+{
+	$('#captcha_reload').on('click',function(e)
+	{
+	  e.preventDefault();
+	  d = new Date();
+	  var src = $("img#captcha_image").attr("src");
+	  src = src.split(/[?#]/)[0];
+	  
+	  $("img#captcha_image").attr("src", src+'?'+d.getTime());
+	});
 });
