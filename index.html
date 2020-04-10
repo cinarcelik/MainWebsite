@@ -14,6 +14,9 @@
     <!-- Google Search Console - Site Verification -->
     <meta name="google-site-verification" content="Rz402OawOOyeYJK63RfPcKPxWIQNjv9Nr_sP80I1km4" />
 
+    <!-- Google reCaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
     <!-- ========== META ========== -->
     <meta charset="UTF-8">
     <title>Çınar Çelik | Personal Website</title>
@@ -37,10 +40,6 @@
             crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a4b2c895af.js" 
             crossorigin="anonymous"></script>
-
-    <!-- for Contact Form -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="form.js"></script>
 
     <!-- Custom Style CSS -->
     <link href="/style.css" rel="stylesheet" >
@@ -307,137 +306,114 @@
     </section>
 
     <!-- ========== CONTACT FORM ========== -->
-    <section>
     <div class="container fluid" id="contact">
-        <div class="row contact text-center">
-            <div class="col-md-12">
-            <h3>Contact</h3>
-            <!-- <hr> -->
-            </div>
+    <div class="row contact">
         
-            <!--Grid column-->
-            <div class="col-md-12 mb-md-0 mb-5">
-                <form role="form"
-                      class="contact-form"
-                      id="reused_form" 
-                      name="contact-form" 
-                      action="" 
-                      method="post">
-    
-                    <!--Grid row-->
-                    <div class="row">
-    
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <label for="name" 
-                                       id="name-label">Name</label>
-                                <input type="text" 
-                                       id="name" 
-                                       name="name"   
-                                       class="form-control" 
-                                       placeholder="Enter your full name"
-                                       autocomplete="on"
-                                       maxlength="50"
-                                       required>
-                            </div>
-                        </div>
-    
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <label for="email" 
-                                       id="email-label">E-mail</label>
-                                <input type="email" 
-                                       id="email" 
-                                       name="email" 
-                                       class="form-control" 
-                                       placeholder="Enter your e-mail"
-                                       autocomplete="on"
-                                       maxlength="50"
-                                       required>
-                            </div>
-                        </div>
-    
-                    </div>
-    
-                    <!--Grid row-->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="md-form mb-0">
-                                <label for="subject" 
-                                       id="subject-label">Subject</label>
-                                <input type="text" 
-                                       id="subject" 
-                                       name="subject" 
-                                       class="form-control"
-                                       placeholder="Enter subject"
-                                       required>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!--Grid row-->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="md-form">
-                                <label for="message"
-                                       id="message-label">Message</label>
-                                <textarea type="textarea" 
-                                          id="message" 
-                                          name="message" 
-                                          rows="2" 
-                                          class="form-control"
-                                          placeholder="Please enter your message here"
-                                          maxlength="6000" 
-                                          rows="7"
-                                          required>
-                                </textarea>
-                            </div>
-                        </div>
-                    </div>
+        <!--Grid column-->
+        <div class="col-md-12 mb-md-0 mb-5">
+            <h3>Contact</h3>
+            <form action="https://formspree.io/xgelloyg"
+                  method="POST" 
+                  class="contact-form"
+                  id="contact-form">
 
-                    <!--Grid row-->
-                    <div class="row">
-                        <div class="col-sm-5">
-                            <img src="captcha.php" id="captcha_image"/>
-                            <br/>
-                            <a id="captcha_reload" href="#">reload</a> 
-                        </div>
-                        <div class="col-sm-6">
-                            <label for="captcha"
-                                   id="captcha-label">Enter the code from the image</label>
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="name" 
+                                    id="name-label">Name</label>
                             <input type="text" 
-                                   class="form-control" 
-                                   id="captcha" 
-                                   name="captcha" 
-                                   required>
+                                    id="name" 
+                                    name="name"   
+                                    class="form-control" 
+                                    placeholder="Enter your full name"
+                                    autocomplete="on"
+                                    maxlength="50"
+                                    required>
                         </div>
                     </div>
 
-                    <!--Grid row-->
-                    <div class="text-center text-md-right">
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="email" 
+                                    id="email-label">E-mail</label>
+                            <input type="email" 
+                                    id="email" 
+                                    name="_replyto" 
+                                    class="form-control" 
+                                    placeholder="Enter your e-mail"
+                                    autocomplete="on"
+                                    maxlength="50"
+                                    required>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <label for="subject" 
+                                    id="subject-label">Subject</label>
+                            <input type="text" 
+                                    id="subject" 
+                                    name="subject" 
+                                    class="form-control"
+                                    placeholder="Enter subject"
+                                    required>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <label for="message"
+                                    id="message-label">Message</label>
+                            <textarea type="text" 
+                                        id="message" 
+                                        name="message" 
+                                        rows="2" 
+                                        class="form-control"
+                                        placeholder="Please enter your message here"
+                                        maxlength="6000" 
+                                        rows="7"
+                                        required>
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="g-recaptcha" 
+                            data-sitekey="6Le3bOgUAAAAAG1i5_DdK6fqxx0wFSP4j6x4kEKV">
+                        </div>
+                    </div>
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
                         <button type="submit" 
-                                id="btnContactUs" 
-                                value="submit" 
+                                id="submit" 
+                                value="Send" 
                                 class="btn btn-success">Send
                         </button>
                     </div>
-                </form>
-
-                <div id="success_message" 
-                     style="width:100%; height:100%; display:none; "> 
-                    <h3>Sent your message successfully!</h3> 
                 </div>
-                <div id="error_message" 
-                     style="width:100%; height:100%; display:none; "> 
-                    <h3>Error</h3> Sorry there was an error sending your form. 
-                </div>
-                
-            </div>
+            </form>
+            
         </div>
     </div>
-    </section>
+    </div>
 
     <!-- ========== SOCIAL MEDIA ========== -->
     <section>
