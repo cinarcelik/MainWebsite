@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
+    <!-- Order of the items in the head section is optimized to make them all work properly -->
     <!-- ========== META ========== -->
     <meta charset="UTF-8">
-    <title>Çınar Çelik | Personal Website</title>
+    <title>Cinar Celik | Personal Website</title>
     <meta name="description" content="Cinar Celik's personal website">
-    <meta name="author" content="Çınar Çelik">
+    <meta name="author" content="Cinar Celik">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -24,22 +25,20 @@
     <!-- Google reCaptcha -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <!-- Bootstrap 4 CSS, Bootstrap 4 JS, jQuery, Popper, FontAwesome -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-          rel="stylesheet" 
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-          crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
-            crossorigin="anonymous"></script>
+    <!-- jQuery, Popper, Bootstrap 4 CSS, Bootstrap 4 JS --> 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
             crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
             crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/a4b2c895af.js" 
-            crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+            crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+              integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+              crossorigin="anonymous"></script>
 
     <!-- Custom Style CSS -->
     <link href="/style.css" rel="stylesheet" >
@@ -47,31 +46,32 @@
 
 <body>
     <!-- ========== NAVIGATION BAR ========== -->
-    <nav class="navbar navbar-expand-md fixed-top">
-    <div class="container-fluid">
+    <div class="navbar navbar-expand-md fixed-top navbar-expand-sm">
         <a class="navbar-brand" href="/index.html"><img src="/img/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a class="nav-link" href="/index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/en/aboutme.html">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="/en/portfolio.html">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="/en/contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#whatido">What I Do</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
-    </nav>
     
-    <!-- ========== WELCOME ========== -->
-    <section>
-    <div class="container-fluid">
-        <div class="row welcome text-center">
+    <!-- ========== HOME ========== -->
+    <div class="container-fluid home" id="home">
+
+        <div class="row text-center">
             <div class="col-sm-12">
                 <h1>Hello!</h1>
                 <hr class="first">
             </div>
+
             <div class="col-sm-12">
                 <p class="lead">I'm an <strong>Industrial Designer</strong> who has experience in coding. <br>I am especially interested in <strong>Game
                     Development</strong>, <strong>Web Development</strong> and <strong>Python applications.</strong></p>
@@ -80,11 +80,9 @@
             </div>
         </div>
     </div>
-    </section>
 
     <!-- ========== ABOUT ME ========== -->
-    <section>
-    <div class="container-fluid aboutme">
+    <div class="container-fluid aboutme" id="aboutme">
 
         <div class="row">
             <div class="col text-center">
@@ -96,6 +94,7 @@
             <div class="col-sm-6">
                 <img class="photo" src="/img/team1.png" alt="my photograph">
             </div>
+
             <div class="col-sm-6">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Nihil dolorem totam laudantium dicta consequuntur a est ipsa aut ullam praesentium, 
@@ -105,10 +104,12 @@
                     odio cumque similique itaque necessitatibus fugiat animi mollitia. Mollitia, ad!
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
+
                 <div class="row">
                     <div class="col-md-12">
                         <h2>My Career Objective</h2>
                     </div>
+
                     <div class="col-md-12">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Nihil dolorem totam laudantium dicta consequuntur a est ipsa aut ullam praesentium, 
@@ -123,6 +124,7 @@
             <div class="col-12">
                 <h2>Education and Experiences</h2>
             </div>
+
             <div class="col-12">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Nihil dolorem totam laudantium dicta consequuntur a est ipsa aut ullam praesentium, 
@@ -134,66 +136,60 @@
                 </p>
             </div>
         </div>
-
     </div>
-    </section>
 
     <!-- ========== WHAT I DO ========== -->
-    <section>
-    <div class="container-fluid">
-    <div class="row what-i-do">
+    <div class="container-fluid whatido" id="whatido">
+
             <div class="col-12 text-center">
                 <h2>What I Do</h2>
                 <!-- <hr> -->
             </div>
-        <div class="col-md-3">
-            <div class="card bg-light">
-                <div class="card-img-overlay">
-                    <h4 class="card-title text-center">Product Design</h4>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card bg-light">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title text-center">Product Design</h4>
+                    </div>
+                    <img class="card-img-bottom" src="img/team1.png" alt="Product Design">
                 </div>
-                <img class="card-img-bottom" src="img/team1.png" alt="Product Design">
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card bg-light">
-                <div class="card-img-overlay">
-                    <h4 class="card-title text-center">Game Design & Development</h4>
+
+            <div class="col-md-3">
+                <div class="card bg-light">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title text-center">Game Design & Development</h4>
+                    </div>
+                    <img class="card-img-bottom" src="img/team2.png" alt="Game Design and Development">
                 </div>
-                <img class="card-img-bottom" src="img/team2.png" alt="Game Design and Development">
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card bg-light">
-                <div class="card-img-overlay">
-                    <h4 class="card-title text-center">Front-end Web Development</h4>
+
+            <div class="col-md-3">
+                <div class="card bg-light">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title text-center">Front-end Web Development</h4>
+                    </div>
+                    <img class="card-img-bottom" src="img/team3.png" alt="Python and Arduino Projects">
                 </div>
-                <img class="card-img-bottom" src="img/team3.png" alt="Python and Arduino Projects">
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card bg-light">
-                <div class="card-img-overlay">
-                    <h4 class="card-title text-center">Python & Arduino Projects</h4>
+
+            <div class="col-md-3">
+                <div class="card bg-light">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title text-center">Python & Arduino Projects</h4>
+                    </div>
+                    <img class="card-img-bottom" src="img/team3.png" alt="Python and Arduino Projects">
                 </div>
-                <img class="card-img-bottom" src="img/team3.png" alt="Python and Arduino Projects">
             </div>
-        </div>
-        <div class="container-fluid">
-        <div class="row portfolio-button text-center">
-            <div class="col-12 center">
-                <a href="/en/portfolio.html" type="button" class="btn btn-outline-light btn-lg">See My Portfolio</a>
-            </div>
-        </div>
         </div>
     </div>
-    </div>
-    </section>
 
     <!-- ========== PORTFOLIO ========== -->
-    <section>
-    <div class="container">
+    <div class="container portfolio" id="portfolio">
+
         <div class="row">
-            <div class="portfolio col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h1 class="portfolio-title">Portfolio</h1>
             </div>
         </div>
@@ -259,68 +255,64 @@
             </div>
         </div>
     </div>
-    </section>
 
-    <!-- ========== MY TOOLKIT ========== -->
-    <section>
-    <div class="container-fluid">
-    <div class="row toolkit text-center">
-        <div class="col-12">
-            <h2>My Toolkit</h2>
-            <!-- <hr> -->
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <img src="https://img.icons8.com/color/96/000000/adobe-creative-cloud.png">
-            <h3>Adobe Creative Cloud</h3>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <img src="https://img.icons8.com/color/96/000000/autodesk-fusion-360.png">
-            <h3>Fusion 360</h3>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <img src="https://img.icons8.com/color/96/000000/blender-3d.png">
-            <h3>Blender</h3>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <img src="https://img.icons8.com/color/96/000000/rhinoceros.png">
-            <h3>Rhinoceros</h3>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <img src="https://img.icons8.com/ios-filled/96/000000/unity.png">
-            <h3>Unity</h3>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <img src="https://img.icons8.com/color/96/000000/arduino.png">
-            <h3>Arduino</h3>
-        </div>
+    <!-- ========== MY TOOLKIT ========== 
+    <div class="container-fluid toolkit">
 
-        <div class="container-fluid">
-        <div class="row toolkit-button text-center">
+        <div class="row text-center">
             <div class="col-12">
-                <a href="/en/aboutme.html" type="button" class="btn btn-outline-light btn-lg">Learn More</a>
+                <h2>My Toolkit</h2>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2">
+                <img src="https://img.icons8.com/color/96/000000/adobe-creative-cloud.png">
+                <h3>Adobe Creative Cloud</h3>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2">
+                <img src="https://img.icons8.com/color/96/000000/autodesk-fusion-360.png">
+                <h3>Fusion 360</h3>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2">
+                <img src="https://img.icons8.com/color/96/000000/blender-3d.png">
+                <h3>Blender</h3>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2">
+                <img src="https://img.icons8.com/color/96/000000/rhinoceros.png">
+                <h3>Rhinoceros</h3>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2">
+                <img src="https://img.icons8.com/ios-filled/96/000000/unity.png">
+                <h3>Unity</h3>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2">
+                <img src="https://img.icons8.com/color/96/000000/arduino.png">
+                <h3>Arduino</h3>
+            </div>
+
+            <div class="row toolkit-button text-center">
+                <div class="col-12">
+                    <a href="/en/aboutme.html" type="button" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>
             </div>
         </div>
-        </div>
-    </div>
-    </div>
-    </section>
+    </div> -->
 
     <!-- ========== CONTACT FORM ========== -->
-    <div class="container fluid" id="contact">
-    <div class="row contact">
+    <div class="container-fluid contact" id="contact">
         
-        <!--Grid column-->
         <div class="col-md-12 mb-md-0 mb-5">
-            <h3>Contact</h3>
+            <h3 class="text-center">Contact</h3>
             <form action="https://formspree.io/xgelloyg"
                   method="POST" 
                   class="contact-form"
                   id="contact-form">
 
-                <!--Grid row-->
                 <div class="row">
-
-                    <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
                             <label for="name" 
@@ -336,7 +328,6 @@
                         </div>
                     </div>
 
-                    <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
                             <label for="email" 
@@ -351,10 +342,8 @@
                                     required>
                         </div>
                     </div>
-
                 </div>
 
-                <!--Grid row-->
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
@@ -373,7 +362,6 @@
                     </div>
                 </div>
 
-                <!--Grid row-->
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form">
@@ -393,17 +381,13 @@
                     </div>
                 </div>
 
-                <!--Grid row-->
                 <div class="row">
-
-                    <!--Grid column-->
                     <div class="col-md-6">
                         <div class="g-recaptcha" 
                             data-sitekey="6Le3bOgUAAAAAG1i5_DdK6fqxx0wFSP4j6x4kEKV">
                         </div>
                     </div>
 
-                    <!--Grid column-->
                     <div class="col-md-6">
                         <button type="submit" 
                                 id="submit" 
@@ -413,42 +397,41 @@
                     </div>
                 </div>
             </form>
-            
         </div>
-    </div>
     </div>
 
     <!-- ========== SOCIAL MEDIA ========== -->
-    <section>
     <div class="container-fluid social">
-    <div class="row text-center">
-        <div class="col-12">
-            <a href="https://www.linkedin.com/in/cinarcelik/" target="_blank">
-                <i class="fab fa-linkedin fa-3x" color="white"></i></a>
-            <a href="https://www.instagram.com/nar_elik/" target="_blank">
-                <i class="fab fa-instagram fa-3x" color="white"></i></a>
-            <a href="https://www.behance.net/cinarcelik" target="_blank">
-                <i class="fab fa-behance-square fa-3x" color="white"></i></a>
+
+        <div class="row text-center">
+            <div class="col-12">
+                <a href="https://www.linkedin.com/in/cinarcelik/" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/52/FFFFFF/linkedin.png" alt="Linkedin link"></a>
+                <a href="https://www.instagram.com/nar_elik/" target="_blank">
+                    <img src="https://img.icons8.com/windows/64/FFFFFF/instagram-new.png" alt="Instagram link"></a>
+                <a href="https://www.behance.net/cinarcelik" target="_blank">
+                    <img src="https://img.icons8.com/metro/44/FFFFFF/behance.png" alt="Behance link"></a>
+            </div>
         </div>
     </div>
-    </div>
-    </section>
 
     <!-- ========== FOOTER ========== -->
     <footer>
     <div class="container-fluid">
-    <div class="row text-center">
-        <div class="col-6">
-            <h5>Designed & Developed by myself<br>Copyright &copy; cinarcelik.cc<br>2020</h5>
+
+        <div class="row text-center">
+            <div class="col-6">
+                <h5>Designed & Developed by myself<br>Copyright &copy; cinarcelik.cc<br>2020</h5>
+            </div>
+
+            <div class="col-6">
+                <h5>Powered by</h5>
+                <a href="https://icons8.com/" target="_blank">
+                    <img src="https://img.icons8.com/windows/48/FFFFFF/icons8-new-logo.png" alt="icons8"></a>
+                <a href="https://pages.github.com/" target="_blank">
+                    <img src="https://img.icons8.com/windows/48/FFFFFF/github.png" alt="GitHub Pages"></a>
+            </div>
         </div>
-        <div class="col-6">
-            <h5>Powered by</h5>
-            <a href="https://icons8.com/" target="_blank">
-                <img src="https://img.icons8.com/windows/48/FFFFFF/icons8-new-logo.png" alt="icons8"></a>
-            <a href="https://pages.github.com/" target="_blank">
-                <img src="https://img.icons8.com/windows/48/FFFFFF/github.png" alt="GitHub Pages"></a>
-        </div>
-    </div>
     </div>
     </footer>
 
@@ -479,6 +462,18 @@
         }
         $(this).addClass("active");
 
+        });
+    </script>
+
+    <!-- ========== JAVASCRIPT for NAVBAR SHRINK ========== -->
+    <script type="text/javascript">
+        $(window).scroll(function() {
+        /* affix after scrolling 100px */
+        if ($(document).scrollTop() > 100) {
+            $('.navbar').addClass('navbar-shrink');
+        } else {
+            $('.navbar').removeClass('navbar-shrink');
+        }
         });
     </script>
 
