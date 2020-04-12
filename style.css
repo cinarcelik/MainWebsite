@@ -196,11 +196,13 @@ body {
 .contact h3 {
     font-size: 2.5rem;
     font-weight: 300;
-    padding-bottom: 20px;
 }
 .contact form {
     width: 650px;
     background-color: inherit;
+}
+.contact textarea {
+    height: 150px;
 }
 
 

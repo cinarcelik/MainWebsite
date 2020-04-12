@@ -301,7 +301,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 pt-0 pb-0">
                         <div class="md-form mb-0">
                             <label for="subject" 
                                     id="subject-label">Subject</label>
@@ -310,6 +310,8 @@
                                     name="subject" 
                                     class="form-control"
                                     placeholder="Enter subject"
+                                    autocomplete="off"
+                                    maxlength="100"
                                     required>
                             <input type="hidden" 
                                    name="_subject" 
@@ -323,24 +325,24 @@
                         <div class="md-form">
                             <label for="message"
                                     id="message-label">Message</label>
-                            <textarea type="text" 
-                                        id="message" 
-                                        name="message" 
-                                        rows="2" 
-                                        class="form-control"
-                                        placeholder="Please enter your message here"
-                                        maxlength="6000" 
-                                        rows="7"
-                                        required>
-                            </textarea>
+                            <textarea type="text"
+                                      id="message"
+                                      name="message"
+                                      class="form-control"
+                                      placeholder="Please enter your message here"
+                                      autocomplete="off"
+                                      maxlength="6000"
+                                      required></textarea>
                         </div>
                     </div>
                 </div>
 
                 <div class="row justify-content-between">
                     <div class="col">
-                        <div class="g-recaptcha" 
-                            data-sitekey="6Le3bOgUAAAAAG1i5_DdK6fqxx0wFSP4j6x4kEKV">
+                        <div class="g-recaptcha"
+                             data-sitekey="6Le3bOgUAAAAAG1i5_DdK6fqxx0wFSP4j6x4kEKV"
+                             data-callback="enableBtn"
+                             data-expired-callback="expiredBtn">
                         </div>
                     </div>
 
@@ -348,7 +350,8 @@
                         <button type="submit" 
                                 id="submit" 
                                 value="Send" 
-                                class="btn btn-success">Send
+                                class="btn btn-success"
+                                disabled="disabled">Send
                         </button>
                     </div>
                 </div>
@@ -489,6 +492,17 @@
         }else{
             location.hash = h;
         }
+        }
+    </script>
+
+    <!-- ========== JAVASCRIPT for OTHER FUNCTIONS ========== -->
+    <script type="text/javascript">
+        // Google reCaptcha button enabling functions
+        function enableBtn(){
+            document.getElementById("submit").disabled = false;
+        }
+        function expiredBtn(){
+            document.getElementById("submit").disabled = true;
         }
     </script>
 
