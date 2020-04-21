@@ -1,0 +1,296 @@
+/* Don't change main.css, 
+instead change main.scss */
+
+/* ---========== FONT IMPORT FROM GOOGLE ==========--- */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+/* Font weights: 300-Light, 400-Regular, 700-Bold */
+
+/* ---========== VARIABLES ==========--- */
+$primary-color: rgb(241, 157, 0);
+$secondary-color: rgb(241, 157, 0);
+$bg-color-1: rgb(233, 233, 233);
+$bg-color-2: rgb(219, 219, 219);
+$bg-color-21: rgb(230, 230, 230);
+$bg-color-3: rgb(245, 245, 245);
+$bg-color-4: rgb(236, 236, 236);
+$bg-color-social: rgb(180, 180, 180);
+$bg-color-footer: rgb(60, 60, 60);
+
+$nav-color: rgb(241, 157, 0);
+$nav-hover-color: rgb(212, 138, 0);
+$nav-text-color: rgb(255, 255, 255);
+$nav-text-hover-color: rgb(255, 255, 255);
+
+$header-color: rgb(26, 26, 26);
+$primary-text-color: rgb(20, 20, 20);
+$secondary-text-color: rgb(51, 51, 51);
+$inverse-text-color: rgb(255, 255, 255);
+
+$font-weights: (
+    "light": 300,
+    "regular": 400,
+    "bold": 700
+);
+
+/* ---========== HTML & BODY ==========--- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+   /* Base font size: 16px so,
+        1rem = 16px,
+        1,5rem = 24px, 
+        2rem = 32px etc. */
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding-top:75px; /*height of fixed navbar*/
+}
+
+
+/* ---========== NAVIGATION BAR ==========--- */
+.navbar {
+    background-color: $nav-color;
+    font-weight: map-get($font-weights, regular);
+    padding: 20px 30px 20px 30px;
+    font-size: 1.2rem;
+    position: fixed;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease; 
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.navbar-nav {
+    li {
+    padding-left: 10px;
+    }
+}
+.nav-link {
+    color: $nav-text-color;
+    text-decoration: none;
+    &:hover {
+        background-color: $nav-hover-color;
+        color: $nav-text-hover-color;
+    }
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler {
+    border-color: $nav-text-color;
+} 
+.navbar-shrink {
+    padding: 0px 30px 0px 30px !important;
+    font-size: 1rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;  
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.current {
+    background-color: $nav-hover-color;
+}
+
+
+/* ---========== HOME ==========--- */
+.home {
+    background-image: url("/img/Artboard1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 2rem;
+    h1 {
+        font-size: 3rem;
+        font-weight: map-get($font-weights, bold);
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+    .lead {
+        font-size: 1.2rem;
+        font-weight: map-get($font-weights, regular);
+    }
+    hr {
+        &.first {
+            border-top: 1px solid;
+            width: 50%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        &.second {
+            border-top: 1px solid;
+            width: 50%;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+
+/* ---========== ABOUT ME ==========--- */
+.aboutme {
+    background-color: $bg-color-1;
+    padding: 110px 150px 110px 150px;
+    font-size: 1rem;
+    font-weight: map-get($font-weights, regular);
+}
+.aboutme h1 {
+    font-size: 2.2rem;
+    font-weight: map-get($font-weights, regular);
+}
+.photo {
+    max-width: 100%;
+}
+
+
+/* ---========== WHAT I DO ==========--- */
+.whatido {
+    background-color: $bg-color-2;
+    padding: 110px 150px 110px 150px;
+}
+.whatido h1 {
+    font-size: 2.2rem;
+    font-weight: map-get($font-weights, regular);
+    padding-bottom: 10px;
+}
+.whatido hr {
+    border-top: 1px solid gray;
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.card {
+    background-color: $bg-color-21;
+    border: none;
+}
+.card-title {
+    font-size: 1.4rem;
+    font-weight: map-get($font-weights, bold);
+}
+.card h4 {
+    font-size: 1rem;
+    font-weight: map-get($font-weights, light);
+}
+
+/* ---========== PORTFOLIO ==========--- */
+.portfolio {
+    background-color: $bg-color-3;
+    padding: 100px;
+}
+.portfolio-title
+{
+    font-size: 2.25rem;
+    font-weight: map-get($font-weights, bold);
+    color: $header-color;
+    text-align: center;
+}
+.filter-button
+{
+    font-size: 1.2rem;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 1rem;
+
+}
+.filter-button:hover
+{
+    color: $primary-color;
+    background-color: $inverse-text-color;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: $primary-color;
+    color: $inverse-text-color;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.portfolio_item
+{
+    margin-bottom: 30px;
+}
+
+
+/* ---========== CONTACT ==========--- */
+.contact {
+    padding: 100px;
+    background-color: $bg-color-4;
+}
+.contact h3 {
+    font-size: 2.5rem;
+    font-weight: map-get($font-weights, regular);
+}
+.contact form {
+    width: 650px;
+    background-color: inherit;
+}
+.contact textarea {
+    height: 150px;
+}
+
+
+/* ---========== SOCIAL MEDIA ==========--- */
+.social {
+    background-color: $bg-color-social;
+    height: 100%;
+}
+.social a {
+    padding: 2.5px;
+}
+
+
+/* ---========== FOOTER ==========--- */
+footer {
+    background-color: $bg-color-footer;
+    color: $inverse-text-color;
+    height: 100%;
+}
+footer h5 {
+    font-size: 1rem;
+    font-weight: map-get($font-weights, regular);
+}
+
+
+/* ---========== MEDIA QUERIES ==========--- */
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+/* ---========== Bootstrap Padding Fix ==========--- */
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
