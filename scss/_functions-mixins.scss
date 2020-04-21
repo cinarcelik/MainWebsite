@@ -1,0 +1,11 @@
+/* mixind and functions are very similar,
+   functions should be used to compute and return values;
+   mixins should define styles. */
+
+/* ---========== FUNCTIONS ==========--- */
+/* font-weight: weight(x); */
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+/* ---========== MIXINS ==========--- */

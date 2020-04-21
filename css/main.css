@@ -3,7 +3,17 @@ instead change main.scss */
 /* ---========== FONT IMPORT FROM GOOGLE ==========--- */
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 /* Font weights: 300-Light, 400-Regular, 700-Bold */
-/* ---========== VARIABLES ==========--- */
+/* ---========== SASS PARTIALS' IMPORTS ==========--- */
+/* Background Colours */
+/* Navigation Bar Colours */
+/* Header and Text Colours */
+/* Font Weights */
+/* mixind and functions are very similar,
+   functions should be used to compute and return values;
+   mixins should define styles. */
+/* ---========== FUNCTIONS ==========--- */
+/* font-weight: weight(x); */
+/* ---========== MIXINS ==========--- */
 /* ---========== HTML & BODY ==========--- */
 html {
   scroll-behavior: smooth;
@@ -114,7 +124,7 @@ body {
 
 .aboutme h1 {
   font-size: 2.2rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .photo {
@@ -145,7 +155,7 @@ body {
   border: none;
 }
 
-.card-title {
+.card .card-title {
   font-size: 1.4rem;
   font-weight: 700;
 }

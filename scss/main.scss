@@ -5,32 +5,9 @@ instead change main.scss */
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 /* Font weights: 300-Light, 400-Regular, 700-Bold */
 
-/* ---========== VARIABLES ==========--- */
-$primary-color: rgb(241, 157, 0);
-$secondary-color: rgb(241, 157, 0);
-$bg-color-1: rgb(233, 233, 233);
-$bg-color-2: rgb(219, 219, 219);
-$bg-color-21: rgb(230, 230, 230);
-$bg-color-3: rgb(245, 245, 245);
-$bg-color-4: rgb(236, 236, 236);
-$bg-color-social: rgb(180, 180, 180);
-$bg-color-footer: rgb(60, 60, 60);
-
-$nav-color: rgb(241, 157, 0);
-$nav-hover-color: rgb(212, 138, 0);
-$nav-text-color: rgb(255, 255, 255);
-$nav-text-hover-color: rgb(255, 255, 255);
-
-$header-color: rgb(26, 26, 26);
-$primary-text-color: rgb(20, 20, 20);
-$secondary-text-color: rgb(51, 51, 51);
-$inverse-text-color: rgb(255, 255, 255);
-
-$font-weights: (
-    "light": 300,
-    "regular": 400,
-    "bold": 700
-);
+/* ---========== SASS PARTIALS' IMPORTS ==========--- */
+@import "./variables";
+@import "./functions-mixins";
 
 /* ---========== HTML & BODY ==========--- */
 html {
@@ -54,7 +31,7 @@ body {
 /* ---========== NAVIGATION BAR ==========--- */
 .navbar {
     background-color: $nav-color;
-    font-weight: map-get($font-weights, regular);
+    font-weight: weight(regular);
     padding: 20px 30px 20px 30px;
     font-size: 1.2rem;
     position: fixed;
@@ -105,13 +82,13 @@ body {
     padding: 2rem;
     h1 {
         font-size: 3rem;
-        font-weight: map-get($font-weights, bold);
+        font-weight: weight(bold);
         padding-top: 4rem;
         padding-bottom: 2rem;
     }
     .lead {
         font-size: 1.2rem;
-        font-weight: map-get($font-weights, regular);
+        font-weight: weight(regular);
     }
     hr {
         &.first {
@@ -135,11 +112,11 @@ body {
     background-color: $bg-color-1;
     padding: 110px 150px 110px 150px;
     font-size: 1rem;
-    font-weight: map-get($font-weights, regular);
-}
-.aboutme h1 {
-    font-size: 2.2rem;
-    font-weight: map-get($font-weights, regular);
+    font-weight: weight(regular);
+    h1 {
+        font-size: 2.2rem;
+        font-weight: weight(bold);
+    }
 }
 .photo {
     max-width: 100%;
@@ -150,29 +127,29 @@ body {
 .whatido {
     background-color: $bg-color-2;
     padding: 110px 150px 110px 150px;
-}
-.whatido h1 {
-    font-size: 2.2rem;
-    font-weight: map-get($font-weights, regular);
-    padding-bottom: 10px;
-}
-.whatido hr {
-    border-top: 1px solid gray;
-    width: 50%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    h1 {
+        font-size: 2.2rem;
+        font-weight: weight(regular);
+        padding-bottom: 10px;
+    }
+    hr {
+        border-top: 1px solid gray;
+        width: 50%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }
 .card {
     background-color: $bg-color-21;
     border: none;
-}
-.card-title {
-    font-size: 1.4rem;
-    font-weight: map-get($font-weights, bold);
-}
-.card h4 {
-    font-size: 1rem;
-    font-weight: map-get($font-weights, light);
+    .card-title {
+        font-size: 1.4rem;
+        font-weight: weight(bold);
+    }
+    h4 {
+        font-size: 1rem;
+        font-weight: weight(light);
+    }
 }
 
 /* ---========== PORTFOLIO ==========--- */
@@ -183,7 +160,7 @@ body {
 .portfolio-title
 {
     font-size: 2.25rem;
-    font-weight: map-get($font-weights, bold);
+    font-weight: weight(bold);
     color: $header-color;
     text-align: center;
 }
@@ -227,7 +204,7 @@ body {
 }
 .contact h3 {
     font-size: 2.5rem;
-    font-weight: map-get($font-weights, regular);
+    font-weight: weight(regular);
 }
 .contact form {
     width: 650px;
@@ -256,7 +233,7 @@ footer {
 }
 footer h5 {
     font-size: 1rem;
-    font-weight: map-get($font-weights, regular);
+    font-weight: weight(regular);
 }
 
 
