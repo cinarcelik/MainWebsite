@@ -1,5 +1,4 @@
-# My Personal Website 
-## *www.cinarcelik.cc*
+# My Personal Website --> *www.cinarcelik.cc*
 
 This is the project repository for my main website's front-end development codes.
 
