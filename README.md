@@ -1,31 +1,15 @@
-<h2>My Personal Website <em>www.cinarcelik.cc</em></h2>
+# My Personal Website *www.cinarcelik.cc*
 
-<p>This is the project repository for my main website's front-end development codes.<br>I learned and used various languages, libraries and extensions for this project, such as:</p>
-<table>
-  <tr>
-    <th>Languages</th>
-    <th>Libraries</th>
-    <th>Extensions</th>
-  </tr>
-  <tr>
-    <th>HTML5</th>
-    <th>jQuery</th>
-    <th>Popper</th>
-  </tr>
-  <tr>
-    <th>CSS3</th>
-    <th>Bootstrap4</th>
-    <th>Icons8</th>
-  </tr>
-  <tr>
-    <th>JavaScript</th>
-    <th></th>
-    <th>Fromspree</th>
-  </tr>
-  <tr>
-    <th></th>
-    <th></th>
-    <th>Sass</th>
-  </tr>
-</table>
-<p>As this is <strong>my first website ever</strong>, I am experimenting with new things and I frequently update it with new codes and content.<br>I would be very glad if you could visit my website. Also, you can leave me a comment using the contact form located at the bottom of the website if you like.<br><strong>Thank you!</strong></p>
+This is the project repository for my main website's front-end development codes.
+I learned and used various languages, libraries and extensions for this project, such as:
+
+| Languages  | Libraries | Extensions |
+| --- | --- | --- |
+| HTML5  | jQuery  | Popper  |
+| CSS3  | Bootstrap4  | Icons8  |
+| JavaScript  | | Formspree  |
+| | | Sass  |
+
+As this is **my first website ever**, I am experimenting with new things and I frequently update it with new codes and content.
+I would be very glad if you could visit my website. Also, you can leave me a comment using the contact form located at the bottom of the website if you like.
+**Thank you!**
